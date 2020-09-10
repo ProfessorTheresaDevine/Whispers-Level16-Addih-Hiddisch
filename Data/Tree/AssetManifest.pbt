@@ -8,6 +8,15 @@
   }
 }
 Assets {
+  Id: 14071709042177044688
+  Name: "Country & Western Music Score Set 01"
+  PlatformAssetType: 10
+  PrimaryAsset {
+    AssetType: "AudioBlueprintAssetRef"
+    AssetId: "abp_CountryWesternMusic_ref"
+  }
+}
+Assets {
   Id: 12095835209017042614
   Name: "Cube"
   PlatformAssetType: 1

@@ -449,6 +449,7 @@ Objects {
   }
   ParentId: 14713340454944924967
   ChildIds: 3567959178173361743
+  ChildIds: 6752795765410284559
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -458,6 +459,43 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   NetworkContext {
+  }
+}
+Objects {
+  Id: 6752795765410284559
+  Name: "Country & Western Music Score Set 01"
+  Transform {
+    Location {
+      Z: 250
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 724324913679364851
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 14071709042177044688
+    }
+    TeamSettings {
+    }
+    AudioBP {
+      AutoPlay: true
+      Repeat: true
+      Volume: 1
+      Falloff: 3600
+      Radius: 400
+    }
   }
 }
 Objects {
@@ -632,7 +670,7 @@ Objects {
     GameSettings {
       RagdollOnDeath: true
       ChatMode {
-        Value: "mc:echatmode:teamandall"
+        Value: "mc:echatmode:allonly"
       }
     }
   }
