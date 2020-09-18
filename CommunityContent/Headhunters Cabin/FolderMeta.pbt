@@ -1,0 +1,59 @@
+﻿MetaVersion: 1
+MarketplaceDetails {
+  Id: "875d4be2ccf4422694150b6b9e1a5134"
+  OwnerAccountId: "81a64a1ba29e4b64a70133c4214becf3"
+  OwnerName: "BaBoon"
+  Version: "1.0.0"
+}
+AssetIdsOriginalToNew {
+  key: 321472518781775172
+  value: 5170567246668797407
+}
+AssetIdsOriginalToNew {
+  key: 1031736639489708352
+  value: 1990496016785544176
+}
+AssetIdsOriginalToNew {
+  key: 2735148923210877907
+  value: 3586825145982825788
+}
+AssetIdsOriginalToNew {
+  key: 2772587570641144020
+  value: 5986856653540319343
+}
+AssetIdsOriginalToNew {
+  key: 6955844820003384117
+  value: 5525559274900162935
+}
+AssetIdsOriginalToNew {
+  key: 9707229335718425412
+  value: 8459794171917414793
+}
+AssetIdsOriginalToNew {
+  key: 12805421167185552631
+  value: 12007945317766399302
+}
+AssetIdsOriginalToNew {
+  key: 12805590271781282532
+  value: 15426442888250154266
+}
+AssetIdsOriginalToNew {
+  key: 14097059690398535345
+  value: 12236498030272624798
+}
+AssetIdsOriginalToNew {
+  key: 15238168365785245367
+  value: 5421804253521847179
+}
+AssetIdsOriginalToNew {
+  key: 15817775566466154341
+  value: 10961108624737205548
+}
+AssetIdsOriginalToNew {
+  key: 17366543309725417603
+  value: 436793173093373130
+}
+AssetIdsOriginalToNew {
+  key: 17383227053170704118
+  value: 17845188678258292198
+}

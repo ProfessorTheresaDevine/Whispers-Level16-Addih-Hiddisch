@@ -1,0 +1,67 @@
+﻿MetaVersion: 1
+MarketplaceDetails {
+  Id: "31b1a532fc0740cdba7bd440d55f8ffc"
+  OwnerAccountId: "aabd84ef7a6448a69c331121b5909cff"
+  OwnerName: "Anna"
+  Version: "1.0.0"
+}
+AssetIdsOriginalToNew {
+  key: 321472518781775172
+  value: 14702623848092855419
+}
+AssetIdsOriginalToNew {
+  key: 1031736639489708352
+  value: 83627049408098590
+}
+AssetIdsOriginalToNew {
+  key: 1129530579957810414
+  value: 1013988130555171429
+}
+AssetIdsOriginalToNew {
+  key: 3136328128754214449
+  value: 15091699400913216306
+}
+AssetIdsOriginalToNew {
+  key: 3392629773265354410
+  value: 17925612465281148167
+}
+AssetIdsOriginalToNew {
+  key: 3398833842601186892
+  value: 1142462657156253219
+}
+AssetIdsOriginalToNew {
+  key: 4780570943435938646
+  value: 16526724474494049018
+}
+AssetIdsOriginalToNew {
+  key: 7650821926592921873
+  value: 16779658351421166770
+}
+AssetIdsOriginalToNew {
+  key: 9276567484094703768
+  value: 12599270730476911629
+}
+AssetIdsOriginalToNew {
+  key: 10983475181038134210
+  value: 14480841958889666217
+}
+AssetIdsOriginalToNew {
+  key: 13366962604941041468
+  value: 18267343884770766580
+}
+AssetIdsOriginalToNew {
+  key: 14099128073663766709
+  value: 5363100446624439490
+}
+AssetIdsOriginalToNew {
+  key: 14309441166722969923
+  value: 7620987273475108095
+}
+AssetIdsOriginalToNew {
+  key: 15469561105063775659
+  value: 926990501332721263
+}
+AssetIdsOriginalToNew {
+  key: 16902790588678825330
+  value: 2644870348847108681
+}
