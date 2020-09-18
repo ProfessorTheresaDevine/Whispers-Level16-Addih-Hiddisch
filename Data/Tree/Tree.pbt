@@ -43874,6 +43874,7 @@ Objects {
   ChildIds: 5216939603630296703
   ChildIds: 1321939021779960688
   ChildIds: 10383168989288035682
+  ChildIds: 15163629298288568053
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -43889,6 +43890,234 @@ Objects {
     InstanceId: 6816666189159490586
     TemplateId: 9227416555317211251
     WasRoot: true
+  }
+}
+Objects {
+  Id: 15163629298288568053
+  Name: "Transport Group"
+  Transform {
+    Location {
+      X: -9.58709717
+      Y: 261.138702
+      Z: 52.3356934
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4205798824800802433
+  ChildIds: 17890666568618598709
+  ChildIds: 11278789994394366401
+  ChildIds: 435762127069896669
+  ChildIds: 2595325857228979724
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 2595325857228979724
+  Name: "Teleport Sound"
+  Transform {
+    Location {
+      X: 0.000106811523
+      Y: -150
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.5
+      Y: 0.5
+      Z: 0.5
+    }
+  }
+  ParentId: 15163629298288568053
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  AudioInstance {
+    AudioAsset {
+      Id: 10953349957141483082
+    }
+    Volume: 1
+    Falloff: -1
+    Radius: -1
+    EnableOcclusion: true
+    IsSpatializationEnabled: true
+    IsAttenuationEnabled: true
+  }
+}
+Objects {
+  Id: 435762127069896669
+  Name: "Beam Down Teleport VFX"
+  Transform {
+    Location {
+      X: 0.000106811523
+      Y: -150
+    }
+    Rotation {
+      Roll: 90.0000153
+    }
+    Scale {
+      X: 0.5
+      Y: 0.5
+      Z: 0.5
+    }
+  }
+  ParentId: 15163629298288568053
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:color"
+      Color {
+        R: 0.61
+        G: 0.266622543
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Particle Color"
+      Color {
+        R: 0.120000005
+        G: 0.0166887417
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Spiral Color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Spiral Ground Element Color"
+      Color {
+        R: 0.179999948
+        G: 0.0393377393
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Emissive Boost"
+      Float: 20
+    }
+    Overrides {
+      Name: "bp:Teleport Duration"
+      Float: 1
+    }
+  }
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 16010759996595736800
+    }
+    TeamSettings {
+    }
+    Vfx {
+    }
+  }
+}
+Objects {
+  Id: 11278789994394366401
+  Name: "Trigger"
+  Transform {
+    Location {
+      X: 12.5
+      Y: -200
+      Z: 125
+    }
+    Rotation {
+      Yaw: -179.999939
+    }
+    Scale {
+      X: 2.9
+      Y: 2.15
+      Z: 5
+    }
+  }
+  ParentId: 15163629298288568053
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Trigger {
+    Interactable: true
+    InteractionLabel: "Enter the Old Town"
+    TeamSettings {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    TriggerShape_v2 {
+      Value: "mc:etriggershape:box"
+    }
+  }
+}
+Objects {
+  Id: 17890666568618598709
+  Name: "TransportPlayer"
+  Transform {
+    Location {
+      X: 4250.00244
+      Y: -3499.99658
+      Z: 825
+    }
+    Rotation {
+      Yaw: -89.9999542
+    }
+    Scale {
+      X: 0.5
+      Y: 0.5
+      Z: 0.5
+    }
+  }
+  ParentId: 15163629298288568053
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:BeamDownTeleportVFX"
+      ObjectReference {
+        SelfId: 435762127069896669
+      }
+    }
+    Overrides {
+      Name: "cs:TeleportSound"
+      ObjectReference {
+        SelfId: 2595325857228979724
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 6475736417643186159
+    }
   }
 }
 Objects {
@@ -57995,15 +58224,7 @@ Objects {
     }
   }
   ParentId: 11027035883263469463
-  ChildIds: 14522317013151669974
-  ChildIds: 11371307614621528928
-  ChildIds: 14505036397264733390
-  ChildIds: 7054170624246380207
-  ChildIds: 14239854197018320454
-  ChildIds: 9803804629218654886
-  ChildIds: 8912136862887589916
-  ChildIds: 11810369288291950999
-  ChildIds: 5383674812690355396
+  ChildIds: 18083503125797725833
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -58015,9 +58236,19 @@ Objects {
   }
 }
 Objects {
-  Id: 5383674812690355396
-  Name: "Portal To A Location"
+  Id: 18083503125797725833
+  Name: "Necklace"
   Transform {
+    Location {
+      X: -6700
+      Y: -8285
+      Z: 170
+    }
+    Rotation {
+      Pitch: 12.9256268
+      Yaw: -18.544281
+      Roll: -13.0361633
+    }
     Scale {
       X: 1
       Y: 1
@@ -58025,60 +58256,22 @@ Objects {
     }
   }
   ParentId: 17963397485783718334
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 11788075628528633600
-      value {
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: -29766.9258
-            Y: -5047.5791
-            Z: -16338.2334
-          }
-        }
-      }
-    }
-    ParameterOverrideMap {
-      key: 12614167284714683440
-      value {
-        Overrides {
-          Name: "Name"
-          String: "Portal To A Location"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: -6718.04639
-            Y: -8620.18066
-            Z: 143.925537
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 0.5
-            Y: 0.5
-            Z: 0.5
-          }
-        }
-        Overrides {
-          Name: "Visible"
-          Enum {
-            Value: "mc:evisibilitysetting:forceoff"
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-            Roll: 89.9999542
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 2430187231811019252
-    }
+  ChildIds: 14522317013151669974
+  ChildIds: 11371307614621528928
+  ChildIds: 14505036397264733390
+  ChildIds: 7054170624246380207
+  ChildIds: 14239854197018320454
+  ChildIds: 9803804629218654886
+  ChildIds: 8912136862887589916
+  ChildIds: 11810369288291950999
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
   }
 }
 Objects {
@@ -58086,12 +58279,12 @@ Objects {
   Name: "Pipe"
   Transform {
     Location {
-      X: -6767.7373
-      Y: -8503.22266
-      Z: 131.611191
+      Z: -15.6577148
     }
     Rotation {
-      Pitch: 90
+      Pitch: 59.9997673
+      Yaw: 2.39054971e-05
+      Roll: 35.0005875
     }
     Scale {
       X: 0.1
@@ -58099,7 +58292,7 @@ Objects {
       Z: 0.01
     }
   }
-  ParentId: 17963397485783718334
+  ParentId: 18083503125797725833
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -58134,12 +58327,14 @@ Objects {
   Name: "Pipe"
   Transform {
     Location {
-      X: -6767.7373
-      Y: -8490.33887
-      Z: 131.611191
+      X: 6.39990234
+      Y: 10.5556641
+      Z: -19.3526611
     }
     Rotation {
-      Pitch: 90
+      Pitch: 59.9997673
+      Yaw: 2.56130297e-05
+      Roll: 35.0006
     }
     Scale {
       X: 0.1
@@ -58147,7 +58342,7 @@ Objects {
       Z: 0.01
     }
   }
-  ParentId: 17963397485783718334
+  ParentId: 18083503125797725833
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -58182,12 +58377,14 @@ Objects {
   Name: "Cylinder - Chamfered Small Polished"
   Transform {
     Location {
-      X: -6768.04395
-      Y: -8478.83398
-      Z: 141.583389
+      X: 16.8828125
+      Y: 20.1533203
+      Z: -13.8901367
     }
     Rotation {
-      Roll: -18.8288631
+      Pitch: -24.1781845
+      Yaw: -38.9563751
+      Roll: -0.506531417
     }
     Scale {
       X: 0.02
@@ -58195,7 +58392,7 @@ Objects {
       Z: 0.2
     }
   }
-  ParentId: 17963397485783718334
+  ParentId: 18083503125797725833
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -58230,12 +58427,14 @@ Objects {
   Name: "Cylinder - Chamfered Small Polished"
   Transform {
     Location {
-      X: -6768.04395
-      Y: -8490.18262
-      Z: 141.583389
+      X: 11.2470703
+      Y: 10.8574219
+      Z: -10.6361084
     }
     Rotation {
-      Roll: -0.603759646
+      Pitch: -24.1780968
+      Yaw: -38.9564362
+      Roll: 17.7189388
     }
     Scale {
       X: 0.02
@@ -58243,7 +58442,7 @@ Objects {
       Z: 0.2
     }
   }
-  ParentId: 17963397485783718334
+  ParentId: 18083503125797725833
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -58278,13 +58477,14 @@ Objects {
   Name: "Ring - Beveled Thin"
   Transform {
     Location {
-      X: -6767.46338
-      Y: -8489.54395
-      Z: 191.825012
+      X: 37.0957031
+      Y: 11.0478516
+      Z: 32.4539795
     }
     Rotation {
-      Yaw: 89.9999771
-      Roll: 89.999939
+      Pitch: -16.6658306
+      Yaw: 58.767067
+      Roll: 64.688736
     }
     Scale {
       X: 0.4
@@ -58292,7 +58492,7 @@ Objects {
       Z: 0.6
     }
   }
-  ParentId: 17963397485783718334
+  ParentId: 18083503125797725833
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -58327,12 +58527,14 @@ Objects {
   Name: "Cylinder - Chamfered Small Polished"
   Transform {
     Location {
-      X: -6768.04395
-      Y: -8500.66
-      Z: 142.776093
+      X: 6.63720703
+      Y: 2.27441406
+      Z: -6.59753418
     }
     Rotation {
-      Roll: 18.0000267
+      Pitch: -24.1781235
+      Yaw: -38.9563065
+      Roll: 36.3226128
     }
     Scale {
       X: 0.02
@@ -58340,7 +58542,7 @@ Objects {
       Z: 0.2
     }
   }
-  ParentId: 17963397485783718334
+  ParentId: 18083503125797725833
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -58375,14 +58577,14 @@ Objects {
   Name: "Cylinder - Chamfered Polished"
   Transform {
     Location {
-      X: -6768.29443
-      Y: -8489.88086
-      Z: 161.096161
+      X: 20.9746094
+      Y: 11.25
+      Z: 6.27893066
     }
     Rotation {
-      Pitch: 90
-      Yaw: -0.949465394
-      Roll: -0.949462891
+      Pitch: 59.9997
+      Yaw: 6.83012877e-06
+      Roll: 35.0006523
     }
     Scale {
       X: 0.3
@@ -58390,7 +58592,7 @@ Objects {
       Z: 0.02
     }
   }
-  ParentId: 17963397485783718334
+  ParentId: 18083503125797725833
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -58425,12 +58627,14 @@ Objects {
   Name: "Pipe"
   Transform {
     Location {
-      X: -6767.7373
-      Y: -8475.89258
-      Z: 131.611191
+      X: 13.5751953
+      Y: 22.3886719
+      Z: -23.4954834
     }
     Rotation {
-      Pitch: 90
+      Pitch: 59.9997673
+      Yaw: 2.56130297e-05
+      Roll: 35.0006
     }
     Scale {
       X: 0.1
@@ -58438,7 +58642,7 @@ Objects {
       Z: 0.01
     }
   }
-  ParentId: 17963397485783718334
+  ParentId: 18083503125797725833
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"

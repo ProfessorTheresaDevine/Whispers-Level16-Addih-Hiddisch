@@ -152,6 +152,15 @@ Assets {
   }
 }
 Assets {
+  Id: 16010759996595736800
+  Name: "Beam Down Teleport VFX"
+  PlatformAssetType: 8
+  PrimaryAsset {
+    AssetType: "VfxBlueprintAssetRef"
+    AssetId: "fxbp_Teleporter_BeamDown"
+  }
+}
+Assets {
   Id: 15955574009587388082
   Name: "Large Wood Beam 8m"
   PlatformAssetType: 1
@@ -545,6 +554,15 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "fxma_parameter_driven_water_manual"
+  }
+}
+Assets {
+  Id: 10953349957141483082
+  Name: "Sci-fi Quick Dark Portal Teleporter Activate 01 SFX"
+  PlatformAssetType: 7
+  PrimaryAsset {
+    AssetType: "AudioAssetRef"
+    AssetId: "sfx_scifi_quick_dark_portal_teleporter_activate_01_Cue_ref"
   }
 }
 Assets {
