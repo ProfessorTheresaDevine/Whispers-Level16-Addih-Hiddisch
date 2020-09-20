@@ -22,6 +22,8 @@ Objects {
   ChildIds: 16813558807825262224
   ChildIds: 15214915947734367850
   ChildIds: 153374082184582939
+  ChildIds: 9033804169298030398
+  ChildIds: 3554114012968374202
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -31,6 +33,71 @@ Objects {
     Value: "mc:evisibilitysetting:forceon"
   }
   Folder {
+  }
+}
+Objects {
+  Id: 3554114012968374202
+  Name: "Game Settings"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:gameOver"
+      Bool: false
+    }
+  }
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Settings {
+    IsDefault: true
+    GameSettings {
+      RagdollOnDeath: true
+      ChatMode {
+        Value: "mc:echatmode:teamandall"
+      }
+    }
+  }
+}
+Objects {
+  Id: 9033804169298030398
+  Name: "PieceGameLogic"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 7298295640091029339
+    }
   }
 }
 Objects {
@@ -77,16 +144,17 @@ Objects {
     }
   }
   ParentId: 153374082184582939
-  ChildIds: 14760495969882751029
-  ChildIds: 1948275888561450402
-  ChildIds: 15635461696899029843
-  ChildIds: 14278142585086767571
-  ChildIds: 7603718700421947841
-  ChildIds: 16500068026429192907
-  ChildIds: 16349812092538963788
-  ChildIds: 10825678587976116873
-  ChildIds: 13763116065975061845
-  ChildIds: 12920314252595975987
+  ChildIds: 4297873259345909174
+  ChildIds: 2191289191826414025
+  ChildIds: 13974855854666320895
+  ChildIds: 16164235512205501554
+  ChildIds: 10197703092624318107
+  ChildIds: 1820303917089671967
+  ChildIds: 4374576090457303445
+  ChildIds: 14564540425828791625
+  ChildIds: 926541139666425145
+  ChildIds: 5873829770399524096
+  ChildIds: 1690857112793293661
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -98,13 +166,13 @@ Objects {
   }
 }
 Objects {
-  Id: 12920314252595975987
-  Name: "Bottle 03"
+  Id: 1690857112793293661
+  Name: "Test PieceTrigger"
   Transform {
     Location {
-      X: -24283.8809
-      Y: -18511.5742
-      Z: 1419.59863
+      X: -8440.48535
+      Y: -8300
+      Z: -1663.40198
     }
     Rotation {
     }
@@ -115,6 +183,69 @@ Objects {
     }
   }
   ParentId: 734847672179147173
+  ChildIds: 17179853379782410549
+  ChildIds: 13999846530229239995
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Trigger {
+    TeamSettings {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    TriggerShape_v2 {
+      Value: "mc:etriggershape:capsule"
+    }
+  }
+}
+Objects {
+  Id: 13999846530229239995
+  Name: "PickUpPiece"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 2
+      Y: 2
+      Z: 2
+    }
+  }
+  ParentId: 1690857112793293661
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 5923514603377670979
+    }
+  }
+}
+Objects {
+  Id: 17179853379782410549
+  Name: "Bottle 03"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1690857112793293661
+  WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -133,17 +264,181 @@ Objects {
     StaticMesh {
       Physics {
       }
+    }
+  }
+}
+Objects {
+  Id: 5873829770399524096
+  Name: "PieceTrigger 10"
+  Transform {
+    Location {
+      X: -24283.8809
+      Y: -18511.5742
+      Z: 1419.599
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 734847672179147173
+  ChildIds: 12920314252595975987
+  ChildIds: 3429671324236622093
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Trigger {
+    TeamSettings {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    TriggerShape_v2 {
+      Value: "mc:etriggershape:box"
+    }
+  }
+}
+Objects {
+  Id: 3429671324236622093
+  Name: "PickUpPiece"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 5873829770399524096
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 5923514603377670979
+    }
+  }
+}
+Objects {
+  Id: 12920314252595975987
+  Name: "Piece 10"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 5873829770399524096
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 13612576125995528748
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 926541139666425145
+  Name: "PieceTrigger 9"
+  Transform {
+    Location {
+      X: -22911.2676
+      Y: -20025.8027
+      Z: 815.155
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 734847672179147173
+  ChildIds: 13763116065975061845
+  ChildIds: 6088345601463134114
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Trigger {
+    TeamSettings {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    TriggerShape_v2 {
+      Value: "mc:etriggershape:box"
+    }
+  }
+}
+Objects {
+  Id: 6088345601463134114
+  Name: "PickUpPiece"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 926541139666425145
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 5923514603377670979
     }
   }
 }
 Objects {
   Id: 13763116065975061845
-  Name: "Bottle 03"
+  Name: "Piece 9"
   Transform {
     Location {
-      X: -22911.2676
-      Y: -20025.8027
-      Z: 815.155151
     }
     Rotation {
     }
@@ -153,7 +448,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 734847672179147173
+  ParentId: 926541139666425145
+  WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -172,17 +468,79 @@ Objects {
     StaticMesh {
       Physics {
       }
+    }
+  }
+}
+Objects {
+  Id: 14564540425828791625
+  Name: "PieceTrigger 8"
+  Transform {
+    Location {
+      X: -17743.168
+      Y: -18032.3496
+      Z: 772.261
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 734847672179147173
+  ChildIds: 10825678587976116873
+  ChildIds: 5887907800845891397
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Trigger {
+    TeamSettings {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    TriggerShape_v2 {
+      Value: "mc:etriggershape:box"
+    }
+  }
+}
+Objects {
+  Id: 5887907800845891397
+  Name: "PickUpPiece"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 14564540425828791625
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 5923514603377670979
     }
   }
 }
 Objects {
   Id: 10825678587976116873
-  Name: "Bottle 03"
+  Name: "Piece 8"
   Transform {
     Location {
-      X: -17743.168
-      Y: -18032.3496
-      Z: 772.261475
     }
     Rotation {
     }
@@ -192,7 +550,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 734847672179147173
+  ParentId: 14564540425828791625
+  WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -211,17 +570,79 @@ Objects {
     StaticMesh {
       Physics {
       }
+    }
+  }
+}
+Objects {
+  Id: 4374576090457303445
+  Name: "PieceTrigger 7"
+  Transform {
+    Location {
+      X: -17028.6855
+      Y: -20072.3965
+      Z: 1305.44104
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 734847672179147173
+  ChildIds: 16349812092538963788
+  ChildIds: 15339368340448144434
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Trigger {
+    TeamSettings {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    TriggerShape_v2 {
+      Value: "mc:etriggershape:box"
+    }
+  }
+}
+Objects {
+  Id: 15339368340448144434
+  Name: "PickUpPiece"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4374576090457303445
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 5923514603377670979
     }
   }
 }
 Objects {
   Id: 16349812092538963788
-  Name: "Bottle 03"
+  Name: "Piece 7"
   Transform {
     Location {
-      X: -17028.6855
-      Y: -20072.3965
-      Z: 1305.44128
     }
     Rotation {
     }
@@ -231,7 +652,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 734847672179147173
+  ParentId: 4374576090457303445
+  WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -250,17 +672,79 @@ Objects {
     StaticMesh {
       Physics {
       }
+    }
+  }
+}
+Objects {
+  Id: 1820303917089671967
+  Name: "PieceTrigger 6"
+  Transform {
+    Location {
+      X: -24556.4043
+      Y: -24119.2383
+      Z: 808.097
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 734847672179147173
+  ChildIds: 16500068026429192907
+  ChildIds: 1379203016258213562
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Trigger {
+    TeamSettings {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    TriggerShape_v2 {
+      Value: "mc:etriggershape:box"
+    }
+  }
+}
+Objects {
+  Id: 1379203016258213562
+  Name: "PickUpPiece"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1820303917089671967
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 5923514603377670979
     }
   }
 }
 Objects {
   Id: 16500068026429192907
-  Name: "Bottle 03"
+  Name: "Piece 6"
   Transform {
     Location {
-      X: -24556.4043
-      Y: -24119.2383
-      Z: 808.096558
     }
     Rotation {
     }
@@ -270,7 +754,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 734847672179147173
+  ParentId: 1820303917089671967
+  WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -289,17 +774,79 @@ Objects {
     StaticMesh {
       Physics {
       }
+    }
+  }
+}
+Objects {
+  Id: 10197703092624318107
+  Name: "PieceTrigger 5"
+  Transform {
+    Location {
+      X: -22584.0723
+      Y: -16729.0625
+      Z: 683.476
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 734847672179147173
+  ChildIds: 7603718700421947841
+  ChildIds: 17518350870189393061
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Trigger {
+    TeamSettings {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    TriggerShape_v2 {
+      Value: "mc:etriggershape:box"
+    }
+  }
+}
+Objects {
+  Id: 17518350870189393061
+  Name: "PickUpPiece"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 10197703092624318107
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 5923514603377670979
     }
   }
 }
 Objects {
   Id: 7603718700421947841
-  Name: "Bottle 03"
+  Name: "Piece 5"
   Transform {
     Location {
-      X: -22584.0723
-      Y: -16729.0625
-      Z: 683.475708
     }
     Rotation {
     }
@@ -309,7 +856,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 734847672179147173
+  ParentId: 10197703092624318107
+  WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -328,17 +876,79 @@ Objects {
     StaticMesh {
       Physics {
       }
+    }
+  }
+}
+Objects {
+  Id: 16164235512205501554
+  Name: "PieceTrigger 4"
+  Transform {
+    Location {
+      X: -15776.8975
+      Y: -16381.0859
+      Z: 735.69
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 734847672179147173
+  ChildIds: 14278142585086767571
+  ChildIds: 2694939149947642117
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Trigger {
+    TeamSettings {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    TriggerShape_v2 {
+      Value: "mc:etriggershape:box"
+    }
+  }
+}
+Objects {
+  Id: 2694939149947642117
+  Name: "PickUpPiece"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16164235512205501554
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 5923514603377670979
     }
   }
 }
 Objects {
   Id: 14278142585086767571
-  Name: "Bottle 03"
+  Name: "Piece 4"
   Transform {
     Location {
-      X: -15776.8975
-      Y: -16381.0859
-      Z: 735.689636
     }
     Rotation {
     }
@@ -348,7 +958,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 734847672179147173
+  ParentId: 16164235512205501554
+  WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -367,17 +978,82 @@ Objects {
     StaticMesh {
       Physics {
       }
+    }
+  }
+}
+Objects {
+  Id: 13974855854666320895
+  Name: "PieceTrigger 3"
+  Transform {
+    Location {
+      X: -15948.5166
+      Y: -12323.749
+      Z: 659.928
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 734847672179147173
+  ChildIds: 15635461696899029843
+  ChildIds: 16463500857295830485
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Trigger {
+    TeamSettings {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    TriggerShape_v2 {
+      Value: "mc:etriggershape:box"
+    }
+  }
+}
+Objects {
+  Id: 16463500857295830485
+  Name: "PickUpPiece"
+  Transform {
+    Location {
+      X: 15948.5166
+      Y: 12323.749
+      Z: -659.928
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 13974855854666320895
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 5923514603377670979
     }
   }
 }
 Objects {
   Id: 15635461696899029843
-  Name: "Bottle 03"
+  Name: "Piece 3"
   Transform {
     Location {
-      X: -15948.5166
-      Y: -12323.749
-      Z: 659.927856
     }
     Rotation {
     }
@@ -387,7 +1063,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 734847672179147173
+  ParentId: 13974855854666320895
+  WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -406,17 +1083,82 @@ Objects {
     StaticMesh {
       Physics {
       }
+    }
+  }
+}
+Objects {
+  Id: 2191289191826414025
+  Name: "PieceTrigger 2"
+  Transform {
+    Location {
+      X: -25061.5
+      Y: -438.796
+      Z: -499.995
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 734847672179147173
+  ChildIds: 1948275888561450402
+  ChildIds: 7139732778396452320
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Trigger {
+    TeamSettings {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    TriggerShape_v2 {
+      Value: "mc:etriggershape:box"
+    }
+  }
+}
+Objects {
+  Id: 7139732778396452320
+  Name: "PickUpPiece"
+  Transform {
+    Location {
+      X: 25061.5
+      Y: 438.796
+      Z: 499.995
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 2191289191826414025
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 5923514603377670979
     }
   }
 }
 Objects {
   Id: 1948275888561450402
-  Name: "Bottle 03"
+  Name: "Piece 2"
   Transform {
     Location {
-      X: -25061.5
-      Y: -438.795654
-      Z: -499.994751
     }
     Rotation {
     }
@@ -426,7 +1168,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 734847672179147173
+  ParentId: 2191289191826414025
+  WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -449,13 +1192,76 @@ Objects {
   }
 }
 Objects {
-  Id: 14760495969882751029
-  Name: "Bottle 03"
+  Id: 4297873259345909174
+  Name: "PieceTrigger 1"
   Transform {
     Location {
       X: -24634.7793
-      Y: -6575.39844
-      Z: 786.200928
+      Y: -6575.39795
+      Z: 786.201
+    }
+    Rotation {
+      Yaw: -39.999939
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 734847672179147173
+  ChildIds: 14760495969882751029
+  ChildIds: 7962579281731293969
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Trigger {
+    TeamSettings {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    TriggerShape_v2 {
+      Value: "mc:etriggershape:box"
+    }
+  }
+}
+Objects {
+  Id: 7962579281731293969
+  Name: "PickUpPiece"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.666666687
+      Y: 0.666666687
+      Z: 0.666666687
+    }
+  }
+  ParentId: 4297873259345909174
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 5923514603377670979
+    }
+  }
+}
+Objects {
+  Id: 14760495969882751029
+  Name: "Piece 1"
+  Transform {
+    Location {
     }
     Rotation {
     }
@@ -465,7 +1271,8 @@ Objects {
       Z: 0.5
     }
   }
-  ParentId: 734847672179147173
+  ParentId: 4297873259345909174
+  WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
