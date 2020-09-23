@@ -16,7 +16,7 @@ function Tick()
 	function ResetMap()
 		-- Set all pieces to "enabled"
 		for _, piece in pairs(pieceFolder:GetChildren()) do
-			if piecce ~= nil then
+			if piece ~= nil then
 				piece.isEnabled = true
 			end
 		end

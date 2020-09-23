@@ -1061,6 +1061,15 @@ Assets {
   }
 }
 Assets {
+  Id: 1520243523266799129
+  Name: "UI Basic Corners 003"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Basic_Corners_003"
+  }
+}
+Assets {
   Id: 1340436291867380805
   Name: "Craftsman Roof 02 Eaves"
   PlatformAssetType: 1
