@@ -113,7 +113,7 @@ Objects {
   }
   ParentId: 734847672179147173
   ChildIds: 14194616554826924341
-  ChildIds: 18118060539879509093
+  ChildIds: 1399363948164150635
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -125,13 +125,13 @@ Objects {
   }
 }
 Objects {
-  Id: 18118060539879509093
-  Name: "Bone Human Femur 01"
+  Id: 1399363948164150635
+  Name: "Bone Human Humerus 01"
   Transform {
     Location {
-      X: -24268.3105
-      Y: -18498.9355
-      Z: 1451.3551
+      X: -24266.3926
+      Y: -18499.8398
+      Z: 1452.5437
     }
     Rotation {
     }
@@ -150,7 +150,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 11549964932562797394
+      Id: 4124909456792648311
     }
     Teams {
       IsTeamCollisionEnabled: true

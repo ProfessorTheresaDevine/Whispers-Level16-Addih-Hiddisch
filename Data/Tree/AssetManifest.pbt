@@ -494,15 +494,6 @@ Assets {
   }
 }
 Assets {
-  Id: 11549964932562797394
-  Name: "Bone Human Femur 01"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_bones_human_femur_01_ref"
-  }
-}
-Assets {
   Id: 11444842455580670538
   Name: "Craftsman Roof 01 Peak End"
   PlatformAssetType: 1
