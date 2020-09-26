@@ -77,16 +77,16 @@ Objects {
     }
   }
   ParentId: 153374082184582939
-  ChildIds: 14760495969882751029
-  ChildIds: 1948275888561450402
-  ChildIds: 15635461696899029843
-  ChildIds: 14278142585086767571
-  ChildIds: 7603718700421947841
-  ChildIds: 16500068026429192907
-  ChildIds: 16349812092538963788
-  ChildIds: 10825678587976116873
-  ChildIds: 13763116065975061845
-  ChildIds: 12920314252595975987
+  ChildIds: 2229935885748849219
+  ChildIds: 16786919678428257985
+  ChildIds: 5545641522507514576
+  ChildIds: 10893968058052369020
+  ChildIds: 3513576693018356614
+  ChildIds: 14037795935748428454
+  ChildIds: 13742474791002337478
+  ChildIds: 11765181518539352333
+  ChildIds: 3546233458049683881
+  ChildIds: 966193072783918886
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -98,12 +98,78 @@ Objects {
   }
 }
 Objects {
-  Id: 12920314252595975987
-  Name: "Bottle 03"
+  Id: 966193072783918886
+  Name: "piece10"
   Transform {
     Location {
-      X: -24283.8809
-      Y: -18511.5742
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 734847672179147173
+  ChildIds: 14194616554826924341
+  ChildIds: 18118060539879509093
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 18118060539879509093
+  Name: "Bone Human Femur 01"
+  Transform {
+    Location {
+      X: -24268.3105
+      Y: -18498.9355
+      Z: 1451.3551
+    }
+    Rotation {
+    }
+    Scale {
+      X: 2
+      Y: 2
+      Z: 1
+    }
+  }
+  ParentId: 966193072783918886
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 11549964932562797394
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 14194616554826924341
+  Name: "Point Light"
+  Transform {
+    Location {
+      X: -24287.5566
+      Y: -18493.6289
       Z: 1419.59863
     }
     Rotation {
@@ -114,36 +180,45 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 734847672179147173
+  ParentId: 966193072783918886
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
-  CoreMesh {
-    MeshAsset {
-      Id: 13612576125995528748
+  Light {
+    Intensity: 9.57559776
+    Color {
+      R: 1
+      G: 1
+      B: 1
+      A: 1
     }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
+    VolumetricIntensity: 5
+    TeamSettings {
     }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
+    Light {
+      Temperature: 6500
+      LocalLight {
+        AttenuationRadius: 1000
+        PointLight {
+          SourceRadius: 20
+          SoftSourceRadius: 20
+          FallOffExponent: 8
+          UseFallOffExponent: true
+        }
       }
+      MaxDrawDistance: 5000
+      MaxDistanceFadeRange: 1000
     }
   }
 }
 Objects {
-  Id: 13763116065975061845
-  Name: "Bottle 03"
+  Id: 3546233458049683881
+  Name: "piece9"
   Transform {
     Location {
-      X: -22911.2676
-      Y: -20025.8027
-      Z: 815.155151
     }
     Rotation {
     }
@@ -154,6 +229,90 @@ Objects {
     }
   }
   ParentId: 734847672179147173
+  ChildIds: 15620682367413617899
+  ChildIds: 6924099885717972270
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 6924099885717972270
+  Name: "Point Light"
+  Transform {
+    Location {
+      X: -22904.2246
+      Y: -20019.4473
+      Z: 815.113464
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3546233458049683881
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Light {
+    Intensity: 2.95880365
+    Color {
+      R: 1
+      G: 1
+      B: 1
+      A: 1
+    }
+    VolumetricIntensity: 5
+    TeamSettings {
+    }
+    Light {
+      Temperature: 6500
+      LocalLight {
+        AttenuationRadius: 1000
+        PointLight {
+          SourceRadius: 20
+          SoftSourceRadius: 20
+          FallOffExponent: 8
+          UseFallOffExponent: true
+        }
+      }
+      MaxDrawDistance: 5000
+      MaxDistanceFadeRange: 1000
+    }
+  }
+}
+Objects {
+  Id: 15620682367413617899
+  Name: "Bone Human Jaw 01"
+  Transform {
+    Location {
+      X: -22913.4961
+      Y: -20009.0234
+      Z: 819.386597
+    }
+    Rotation {
+      Pitch: 1.15525126
+      Yaw: -151.515137
+      Roll: -15.6568432
+    }
+    Scale {
+      X: 2
+      Y: 2
+      Z: 1
+    }
+  }
+  ParentId: 3546233458049683881
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -162,7 +321,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 13612576125995528748
+      Id: 9146110886233002983
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -176,13 +335,10 @@ Objects {
   }
 }
 Objects {
-  Id: 10825678587976116873
-  Name: "Bottle 03"
+  Id: 11765181518539352333
+  Name: "piece8"
   Transform {
     Location {
-      X: -17743.168
-      Y: -18032.3496
-      Z: 772.261475
     }
     Rotation {
     }
@@ -193,6 +349,87 @@ Objects {
     }
   }
   ParentId: 734847672179147173
+  ChildIds: 138270927347416619
+  ChildIds: 5538267328365906098
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 5538267328365906098
+  Name: "Point Light"
+  Transform {
+    Location {
+      X: -17752.7891
+      Y: -18034.7461
+      Z: 787.505
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 11765181518539352333
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Light {
+    Intensity: 1.15422344
+    Color {
+      R: 1
+      G: 1
+      B: 1
+      A: 1
+    }
+    VolumetricIntensity: 5
+    TeamSettings {
+    }
+    Light {
+      Temperature: 6500
+      LocalLight {
+        AttenuationRadius: 1000
+        PointLight {
+          SourceRadius: 20
+          SoftSourceRadius: 20
+          FallOffExponent: 8
+          UseFallOffExponent: true
+        }
+      }
+      MaxDrawDistance: 5000
+      MaxDistanceFadeRange: 1000
+    }
+  }
+}
+Objects {
+  Id: 138270927347416619
+  Name: "Bone Human Foot 01"
+  Transform {
+    Location {
+      X: -17748.8
+      Y: -18054.9512
+      Z: 796.843384
+    }
+    Rotation {
+    }
+    Scale {
+      X: 2
+      Y: 1.2
+      Z: 2
+    }
+  }
+  ParentId: 11765181518539352333
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -201,7 +438,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 13612576125995528748
+      Id: 17280484066126132757
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -215,13 +452,10 @@ Objects {
   }
 }
 Objects {
-  Id: 16349812092538963788
-  Name: "Bottle 03"
+  Id: 13742474791002337478
+  Name: "piece7"
   Transform {
     Location {
-      X: -17028.6855
-      Y: -20072.3965
-      Z: 1305.44128
     }
     Rotation {
     }
@@ -232,6 +466,36 @@ Objects {
     }
   }
   ParentId: 734847672179147173
+  ChildIds: 5173800863675371124
+  ChildIds: 9823876455354226339
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 9823876455354226339
+  Name: "Bone Human Humerus 01"
+  Transform {
+    Location {
+      X: -17017.8359
+      Y: -20038.9199
+      Z: 1344.28772
+    }
+    Rotation {
+    }
+    Scale {
+      X: 2
+      Y: 2
+      Z: 1
+    }
+  }
+  ParentId: 13742474791002337478
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -240,7 +504,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 13612576125995528748
+      Id: 4124909456792648311
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -254,13 +518,61 @@ Objects {
   }
 }
 Objects {
-  Id: 16500068026429192907
-  Name: "Bottle 03"
+  Id: 5173800863675371124
+  Name: "Point Light"
   Transform {
     Location {
-      X: -24556.4043
-      Y: -24119.2383
-      Z: 808.096558
+      X: -17017.6191
+      Y: -20033.3379
+      Z: 1350.65967
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 13742474791002337478
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Light {
+    Intensity: 3.56033039
+    Color {
+      R: 1
+      G: 1
+      B: 1
+      A: 1
+    }
+    VolumetricIntensity: 5
+    TeamSettings {
+    }
+    Light {
+      Temperature: 6500
+      LocalLight {
+        AttenuationRadius: 1000
+        PointLight {
+          SourceRadius: 20
+          SoftSourceRadius: 20
+          FallOffExponent: 8
+          UseFallOffExponent: true
+        }
+      }
+      MaxDrawDistance: 5000
+      MaxDistanceFadeRange: 1000
+    }
+  }
+}
+Objects {
+  Id: 14037795935748428454
+  Name: "piece6"
+  Transform {
+    Location {
     }
     Rotation {
     }
@@ -271,6 +583,90 @@ Objects {
     }
   }
   ParentId: 734847672179147173
+  ChildIds: 7820837499804133105
+  ChildIds: 17066268007477383338
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 17066268007477383338
+  Name: "Point Light"
+  Transform {
+    Location {
+      X: -24545.8594
+      Y: -24105.0098
+      Z: 817.284241
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 14037795935748428454
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Light {
+    Intensity: 5.3649106
+    Color {
+      R: 1
+      G: 1
+      B: 1
+      A: 1
+    }
+    VolumetricIntensity: 5
+    TeamSettings {
+    }
+    Light {
+      Temperature: 6500
+      LocalLight {
+        AttenuationRadius: 1000
+        PointLight {
+          SourceRadius: 20
+          SoftSourceRadius: 20
+          FallOffExponent: 8
+          UseFallOffExponent: true
+        }
+      }
+      MaxDrawDistance: 5000
+      MaxDistanceFadeRange: 1000
+    }
+  }
+}
+Objects {
+  Id: 7820837499804133105
+  Name: "Bone Human Scapula 01"
+  Transform {
+    Location {
+      X: -24542.0137
+      Y: -24121.5625
+      Z: 810.054626
+    }
+    Rotation {
+      Pitch: -42.087883
+      Yaw: -141.670502
+      Roll: -83.9977264
+    }
+    Scale {
+      X: 1
+      Y: 2
+      Z: 1
+    }
+  }
+  ParentId: 14037795935748428454
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -279,7 +675,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 13612576125995528748
+      Id: 10743705362862236791
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -293,13 +689,10 @@ Objects {
   }
 }
 Objects {
-  Id: 7603718700421947841
-  Name: "Bottle 03"
+  Id: 3513576693018356614
+  Name: "piece5"
   Transform {
     Location {
-      X: -22584.0723
-      Y: -16729.0625
-      Z: 683.475708
     }
     Rotation {
     }
@@ -310,6 +703,36 @@ Objects {
     }
   }
   ParentId: 734847672179147173
+  ChildIds: 13599260843976799794
+  ChildIds: 1921851194799330965
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 1921851194799330965
+  Name: "Bone Human Pelvis Half 01"
+  Transform {
+    Location {
+      X: -22581.2598
+      Y: -16858.498
+      Z: 725.081177
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3513576693018356614
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -318,7 +741,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 13612576125995528748
+      Id: 13575570990798761537
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -332,13 +755,61 @@ Objects {
   }
 }
 Objects {
-  Id: 14278142585086767571
-  Name: "Bottle 03"
+  Id: 13599260843976799794
+  Name: "Point Light"
   Transform {
     Location {
-      X: -15776.8975
-      Y: -16381.0859
-      Z: 735.689636
+      X: -22586.459
+      Y: -16863.291
+      Z: 747.422485
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3513576693018356614
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Light {
+    Intensity: 2.95880365
+    Color {
+      R: 1
+      G: 1
+      B: 1
+      A: 1
+    }
+    VolumetricIntensity: 5
+    TeamSettings {
+    }
+    Light {
+      Temperature: 6500
+      LocalLight {
+        AttenuationRadius: 1000
+        PointLight {
+          SourceRadius: 20
+          SoftSourceRadius: 20
+          FallOffExponent: 8
+          UseFallOffExponent: true
+        }
+      }
+      MaxDrawDistance: 5000
+      MaxDistanceFadeRange: 1000
+    }
+  }
+}
+Objects {
+  Id: 10893968058052369020
+  Name: "piece4"
+  Transform {
+    Location {
     }
     Rotation {
     }
@@ -349,6 +820,88 @@ Objects {
     }
   }
   ParentId: 734847672179147173
+  ChildIds: 1337897022750824741
+  ChildIds: 6775715044435895609
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 6775715044435895609
+  Name: "Point Light"
+  Transform {
+    Location {
+      X: -15853.7568
+      Y: -16355.7725
+      Z: 933.89917
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 10893968058052369020
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Light {
+    Intensity: 16.7939186
+    Color {
+      R: 1
+      G: 1
+      B: 1
+      A: 1
+    }
+    VolumetricIntensity: 5
+    TeamSettings {
+    }
+    Light {
+      Temperature: 6500
+      LocalLight {
+        AttenuationRadius: 1000
+        PointLight {
+          SourceRadius: 20
+          SoftSourceRadius: 20
+          FallOffExponent: 8
+          UseFallOffExponent: true
+        }
+      }
+      MaxDrawDistance: 5000
+      MaxDistanceFadeRange: 1000
+    }
+  }
+}
+Objects {
+  Id: 1337897022750824741
+  Name: "Bone Human Skull 01"
+  Transform {
+    Location {
+      X: -15817.542
+      Y: -16355.2256
+      Z: 876.151489
+    }
+    Rotation {
+      Yaw: 89.9999542
+    }
+    Scale {
+      X: 2
+      Y: 2
+      Z: 2
+    }
+  }
+  ParentId: 10893968058052369020
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -357,7 +910,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 13612576125995528748
+      Id: 13180655494849194491
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -371,13 +924,10 @@ Objects {
   }
 }
 Objects {
-  Id: 15635461696899029843
-  Name: "Bottle 03"
+  Id: 5545641522507514576
+  Name: "piece3"
   Transform {
     Location {
-      X: -15948.5166
-      Y: -12323.749
-      Z: 659.927856
     }
     Rotation {
     }
@@ -388,35 +938,114 @@ Objects {
     }
   }
   ParentId: 734847672179147173
+  ChildIds: 9143541847867255130
+  ChildIds: 13319771456178916823
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
-  CoreMesh {
-    MeshAsset {
-      Id: 13612576125995528748
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 13319771456178916823
+  Name: "Point Light"
+  Transform {
+    Location {
+      X: -15924.9443
+      Y: -12244.6094
+      Z: 691.598389
     }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
+    Rotation {
     }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 5545641522507514576
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Light {
+    Intensity: 3.56033039
+    Color {
+      R: 1
+      G: 1
+      B: 1
+      A: 1
+    }
+    VolumetricIntensity: 5
+    TeamSettings {
+    }
+    Light {
+      Temperature: 6500
+      LocalLight {
+        AttenuationRadius: 1000
+        PointLight {
+          SourceRadius: 20
+          SoftSourceRadius: 20
+          FallOffExponent: 8
+          UseFallOffExponent: true
+        }
       }
+      MaxDrawDistance: 5000
+      MaxDistanceFadeRange: 1000
     }
   }
 }
 Objects {
-  Id: 1948275888561450402
-  Name: "Bottle 03"
+  Id: 9143541847867255130
+  Name: "piece3"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 5545641522507514576
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 13189673988121232325
+      value {
+        Overrides {
+          Name: "Name"
+          String: "piece3"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -15943.0518
+            Y: -12269.1221
+            Z: 678.993896
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 21.6408978
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 7160047314863974687
+    }
+  }
+}
+Objects {
+  Id: 16786919678428257985
+  Name: "piece2"
   Transform {
     Location {
-      X: -25061.5
-      Y: -438.795654
-      Z: -499.994751
     }
     Rotation {
     }
@@ -427,63 +1056,258 @@ Objects {
     }
   }
   ParentId: 734847672179147173
+  ChildIds: 11433228090874728804
+  ChildIds: 5148575813798758671
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
-  CoreMesh {
-    MeshAsset {
-      Id: 13612576125995528748
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
+  Folder {
+    IsGroup: true
   }
 }
 Objects {
-  Id: 14760495969882751029
-  Name: "Bottle 03"
+  Id: 5148575813798758671
+  Name: "Point Light"
   Transform {
     Location {
-      X: -24634.7793
-      Y: -6575.39844
-      Z: 786.200928
+      X: -25242.7715
+      Y: 1628.59595
+      Z: -798.290649
     }
     Rotation {
     }
     Scale {
-      X: 0.5
-      Y: 0.5
-      Z: 0.5
+      X: 1
+      Y: 1
+      Z: 1
     }
   }
-  ParentId: 734847672179147173
+  ParentId: 16786919678428257985
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
-  CoreMesh {
-    MeshAsset {
-      Id: 13612576125995528748
+  Light {
+    Intensity: 5.96643734
+    Color {
+      R: 1
+      G: 1
+      B: 1
+      A: 1
     }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
+    VolumetricIntensity: 5
+    TeamSettings {
     }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
+    Light {
+      Temperature: 6500
+      LocalLight {
+        AttenuationRadius: 1000
+        PointLight {
+          SourceRadius: 20
+          SoftSourceRadius: 20
+          FallOffExponent: 8
+          UseFallOffExponent: true
+        }
       }
+      MaxDrawDistance: 5000
+      MaxDistanceFadeRange: 1000
+    }
+  }
+}
+Objects {
+  Id: 11433228090874728804
+  Name: "piece2"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16786919678428257985
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 17541115054030556396
+      value {
+        Overrides {
+          Name: "Name"
+          String: "piece2"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -25237.4453
+            Y: 1627.74817
+            Z: -831.847534
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -45.0956726
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 15087224644800590700
+    }
+  }
+}
+Objects {
+  Id: 2229935885748849219
+  Name: "piece1"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 734847672179147173
+  ChildIds: 462003807178682204
+  ChildIds: 8734008816760317168
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 8734008816760317168
+  Name: "Point Light"
+  Transform {
+    Location {
+      X: -24640.4551
+      Y: -6574.32568
+      Z: 806.504822
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 2229935885748849219
+  ChildIds: 8212262278258632181
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Light {
+    Intensity: 1.15422344
+    Color {
+      R: 1
+      G: 1
+      B: 1
+      A: 1
+    }
+    VolumetricIntensity: 5
+    TeamSettings {
+    }
+    Light {
+      Temperature: 6500
+      LocalLight {
+        AttenuationRadius: 1000
+        PointLight {
+          SourceRadius: 20
+          SoftSourceRadius: 20
+          FallOffExponent: 8
+          UseFallOffExponent: true
+        }
+      }
+      MaxDrawDistance: 5000
+      MaxDistanceFadeRange: 1000
+    }
+  }
+}
+Objects {
+  Id: 8212262278258632181
+  Name: "Group"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 8734008816760317168
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 462003807178682204
+  Name: "piece1"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 2229935885748849219
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 1167740403509448269
+      value {
+        Overrides {
+          Name: "Name"
+          String: "piece1"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -24634.0977
+            Y: -6569.02637
+            Z: 798.686218
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.2
+            Y: 0.2
+            Z: 0.2
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 44.8425636
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 12799795501918826971
     }
   }
 }
