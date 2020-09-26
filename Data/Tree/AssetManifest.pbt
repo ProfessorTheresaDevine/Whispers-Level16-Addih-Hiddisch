@@ -80,15 +80,6 @@ Assets {
   }
 }
 Assets {
-  Id: 17280484066126132757
-  Name: "Bone Human Foot 01"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_bones_human_foot_01_ref"
-  }
-}
-Assets {
   Id: 16910278292812118833
   Name: "Sun Light"
   PlatformAssetType: 6
@@ -377,15 +368,6 @@ Assets {
   }
 }
 Assets {
-  Id: 13575570990798761537
-  Name: "Bone Human Pelvis Half 01"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_bones_human_pelvis_01_ref"
-  }
-}
-Assets {
   Id: 13496124208050660425
   Name: "Flower Bellflower 02"
   PlatformAssetType: 1
@@ -584,15 +566,6 @@ Assets {
   }
 }
 Assets {
-  Id: 10743705362862236791
-  Name: "Bone Human Scapula 01"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_bones_human_scap_01_ref"
-  }
-}
-Assets {
   Id: 10281605395763127909
   Name: "Text 05: C"
   PlatformAssetType: 1
@@ -653,15 +626,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_urb_sub_craftsman_door_001"
-  }
-}
-Assets {
-  Id: 9146110886233002983
-  Name: "Bone Human Jaw 01"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_bones_human_jaw_01_ref"
   }
 }
 Assets {
@@ -932,15 +896,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_urb_sub_craftsman_roof_001_bracket"
-  }
-}
-Assets {
-  Id: 4124909456792648311
-  Name: "Bone Human Humerus 01"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_bones_human_humerus_01_ref"
   }
 }
 Assets {

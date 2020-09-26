@@ -25,6 +25,7 @@ Objects {
   ChildIds: 9033804169298030398
   ChildIds: 3554114012968374202
   ChildIds: 15826250425719088589
+  ChildIds: 782565234104040973
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -34,6 +35,132 @@ Objects {
     Value: "mc:evisibilitysetting:forceon"
   }
   Folder {
+  }
+}
+Objects {
+  Id: 782565234104040973
+  Name: "piece1"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  ChildIds: 2319889916458775708
+  ChildIds: 18205407301531488478
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 18205407301531488478
+  Name: "Point Light"
+  Transform {
+    Location {
+      X: -24648.3926
+      Y: -6565.00293
+      Z: 816.331238
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 782565234104040973
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Light {
+    Intensity: 3.56033039
+    Color {
+      R: 1
+      G: 1
+      B: 1
+      A: 1
+    }
+    VolumetricIntensity: 5
+    TeamSettings {
+    }
+    Light {
+      Temperature: 6500
+      LocalLight {
+        AttenuationRadius: 1000
+        PointLight {
+          SourceRadius: 20
+          SoftSourceRadius: 20
+          FallOffExponent: 8
+          UseFallOffExponent: true
+        }
+      }
+      MaxDrawDistance: 5000
+      MaxDistanceFadeRange: 1000
+    }
+  }
+}
+Objects {
+  Id: 2319889916458775708
+  Name: "piece1"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 782565234104040973
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 14153026378223810061
+      value {
+        Overrides {
+          Name: "Name"
+          String: "piece1"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -24610.3555
+            Y: -6578.02588
+            Z: 792.747498
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.3
+            Y: 0.3
+            Z: 0.3
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 32.4741058
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 4278580152789323401
+    }
   }
 }
 Objects {
