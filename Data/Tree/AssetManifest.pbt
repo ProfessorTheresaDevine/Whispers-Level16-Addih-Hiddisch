@@ -8,6 +8,15 @@
   }
 }
 Assets {
+  Id: 18319704903747207041
+  Name: "Bone Human Femur 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_bones_human_femur_01_ref"
+  }
+}
+Assets {
   Id: 18033389860248816225
   Name: "Craftsman Interior Door 01"
   PlatformAssetType: 1
@@ -188,6 +197,15 @@ Assets {
   }
 }
 Assets {
+  Id: 15186763367493361441
+  Name: "Bone Human Tibula 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_bones_human_tib_01_ref"
+  }
+}
+Assets {
   Id: 15127708155090216422
   Name: "Trim Crenellated 4m 02"
   PlatformAssetType: 1
@@ -356,15 +374,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_carpet_tile_001"
-  }
-}
-Assets {
-  Id: 13612576125995528748
-  Name: "Bottle 03"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_prop_fantasy_bottle_003"
   }
 }
 Assets {
@@ -554,6 +563,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "F6_Text_004"
+  }
+}
+Assets {
+  Id: 10743705362862236791
+  Name: "Bone Human Scapula 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_bones_human_scap_01_ref"
   }
 }
 Assets {
@@ -836,6 +854,15 @@ Assets {
   }
 }
 Assets {
+  Id: 5720075498595558039
+  Name: "Bone Human Ribcage Half"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_bones_ribhalf_01_ref"
+  }
+}
+Assets {
   Id: 5604237310652087622
   Name: "Rock Pile 002"
   PlatformAssetType: 1
@@ -854,12 +881,30 @@ Assets {
   }
 }
 Assets {
+  Id: 5185609678641477548
+  Name: "Bone Human Foot 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_bones_human_foot_01_ref"
+  }
+}
+Assets {
   Id: 4903499742970695079
   Name: "Cube - bottom aligned"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_cube_001"
+  }
+}
+Assets {
+  Id: 4892960596213396680
+  Name: "Bone Human Hand 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_bones_human_hand_01_ref"
   }
 }
 Assets {
