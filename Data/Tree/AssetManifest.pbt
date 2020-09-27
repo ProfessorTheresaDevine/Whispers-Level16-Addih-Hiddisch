@@ -548,6 +548,15 @@ Assets {
   }
 }
 Assets {
+  Id: 11057312661694087048
+  Name: "Waterfall Small SFX"
+  PlatformAssetType: 7
+  PrimaryAsset {
+    AssetType: "AudioAssetRef"
+    AssetId: "sfx_waterfall_Cue"
+  }
+}
+Assets {
   Id: 10986783223350812651
   Name: "Cube - Chamfered Small Polished"
   PlatformAssetType: 1
@@ -782,6 +791,15 @@ Assets {
   }
 }
 Assets {
+  Id: 7765023027745624892
+  Name: "Nature Wind Steady 01 SFX"
+  PlatformAssetType: 7
+  PrimaryAsset {
+    AssetType: "AudioAssetRef"
+    AssetId: "sfx_nature_wind_steady_01_Cue_ref"
+  }
+}
+Assets {
   Id: 7546850384925500723
   Name: "Craftsman Part - Wall 01"
   PlatformAssetType: 1
@@ -806,6 +824,15 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_stucco_001_uv"
+  }
+}
+Assets {
+  Id: 7142781972612396783
+  Name: "Arch Fancy Peaked 6m"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_arch_fancy_ogive_6m_001"
   }
 }
 Assets {
@@ -851,6 +878,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_ts_gen_whitebox_wall_001_triTop"
+  }
+}
+Assets {
+  Id: 6677237403455816226
+  Name: "Portal VFX"
+  PlatformAssetType: 6
+  PrimaryAsset {
+    AssetType: "BlueprintAssetRef"
+    AssetId: "fxbp_portal"
   }
 }
 Assets {

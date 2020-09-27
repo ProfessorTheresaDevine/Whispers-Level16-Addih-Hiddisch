@@ -26,6 +26,8 @@ Objects {
   ChildIds: 3554114012968374202
   ChildIds: 15826250425719088589
   ChildIds: 9304559546727325325
+  ChildIds: 17816829115585702498
+  ChildIds: 4595515415539244221
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -35,6 +37,746 @@ Objects {
     Value: "mc:evisibilitysetting:forceon"
   }
   Folder {
+  }
+}
+Objects {
+  Id: 4595515415539244221
+  Name: "Portal to Rain Painter"
+  Transform {
+    Location {
+      X: -19700
+      Y: -10450
+      Z: 658
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  ChildIds: 16561480481459853681
+  ChildIds: 14542604205136575273
+  ChildIds: 11651424825277624107
+  ChildIds: 14099832323611579028
+  ChildIds: 9966662939140508603
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 9966662939140508603
+  Name: "Portal VFX"
+  Transform {
+    Location {
+      X: 220
+      Y: 100
+      Z: 200
+    }
+    Rotation {
+      Yaw: 70
+    }
+    Scale {
+      X: 0.51
+      Y: 0.24
+      Z: 0.5
+    }
+  }
+  ParentId: 4595515415539244221
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Background Texture"
+      Enum {
+        Value: "mc:eportalbackground:10"
+      }
+    }
+    Overrides {
+      Name: "bp:Portal Spread"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:Portal Shape"
+      Int: 1
+    }
+    Overrides {
+      Name: "bp:Edge Distance"
+      Float: 0.388283372
+    }
+    Overrides {
+      Name: "bp:Color A"
+      Color {
+        G: 0.793311119
+        B: 0.99
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Color B"
+      Color {
+        R: 0.081655696
+        B: 0.0900000334
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Color C"
+      Color {
+        R: 0.0311262254
+        B: 0.940000057
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Scene Tint Color"
+      Color {
+        R: 0.554900765
+        G: 0.53
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Scene View Distortion Type"
+      Enum {
+        Value: "mc:eportalscenedistortiontype:newenumerator2"
+      }
+    }
+  }
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 6677237403455816226
+    }
+    TeamSettings {
+    }
+  }
+}
+Objects {
+  Id: 14099832323611579028
+  Name: "Trigger"
+  Transform {
+    Location {
+      X: 225
+      Y: 100
+      Z: 42
+    }
+    Rotation {
+      Yaw: 70
+    }
+    Scale {
+      X: 1
+      Y: 2.25
+      Z: 7.5
+    }
+  }
+  ParentId: 4595515415539244221
+  ChildIds: 5366584588377976321
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Trigger {
+    Interactable: true
+    InteractionLabel: "Enter Rain Painter"
+    TeamSettings {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    TriggerShape_v2 {
+      Value: "mc:etriggershape:box"
+    }
+  }
+}
+Objects {
+  Id: 5366584588377976321
+  Name: "transportToRainPainter"
+  Transform {
+    Location {
+      X: 16386.6602
+      Y: -6560.26904
+      Z: -93.3333282
+    }
+    Rotation {
+      Yaw: -70
+    }
+    Scale {
+      X: 1
+      Y: 0.444444448
+      Z: 0.133333325
+    }
+  }
+  ParentId: 14099832323611579028
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 16765358215248908826
+    }
+  }
+}
+Objects {
+  Id: 11651424825277624107
+  Name: "Beam Down Teleport VFX"
+  Transform {
+    Location {
+      X: 13000
+      Y: 1950
+      Z: -2308
+    }
+    Rotation {
+      Pitch: -6.83018879e-06
+      Yaw: 89.999939
+      Roll: 90.0000076
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4595515415539244221
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:color"
+      Color {
+        R: 0.61
+        G: 0.266622543
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Particle Color"
+      Color {
+        R: 0.120000005
+        G: 0.0166887417
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Spiral Color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Spiral Ground Element Color"
+      Color {
+        R: 0.179999948
+        G: 0.0393377393
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Emissive Boost"
+      Float: 20
+    }
+    Overrides {
+      Name: "bp:Teleport Duration"
+      Float: 1
+    }
+  }
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 16010759996595736800
+    }
+    TeamSettings {
+    }
+    Vfx {
+    }
+  }
+}
+Objects {
+  Id: 14542604205136575273
+  Name: "TransportSound"
+  Transform {
+    Location {
+      X: 200
+      Y: 100
+      Z: 242
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4595515415539244221
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  AudioInstance {
+    AudioAsset {
+      Id: 11057312661694087048
+    }
+    Volume: 0.217517808
+    Radius: 490
+    EnableOcclusion: true
+    FadeOutTime: 2
+    IsSpatializationEnabled: true
+    IsAttenuationEnabled: true
+  }
+}
+Objects {
+  Id: 16561480481459853681
+  Name: "Arch Fancy Peaked 6m"
+  Transform {
+    Location {
+      X: 400
+      Y: 50
+    }
+    Rotation {
+      Yaw: 70.0000534
+    }
+    Scale {
+      X: 1
+      Y: 0.65
+      Z: 1
+    }
+  }
+  ParentId: 4595515415539244221
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 4600228395860812631
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.397351146
+        G: 0.350000024
+        B: 1
+        A: 1
+      }
+    }
+  }
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 7142781972612396783
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 17816829115585702498
+  Name: "Portal to Pieceweaver"
+  Transform {
+    Location {
+      X: -17450
+      Y: -10700
+      Z: 850
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  ChildIds: 10318938888443075517
+  ChildIds: 3752420043581358914
+  ChildIds: 6419235770541297289
+  ChildIds: 13822238896056597953
+  ChildIds: 18444871178732690165
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 18444871178732690165
+  Name: "Portal VFX"
+  Transform {
+    Location {
+      X: -1150
+    }
+    Rotation {
+      Yaw: 45.0000534
+    }
+    Scale {
+      X: 0.51
+      Y: 0.24
+      Z: 0.5
+    }
+  }
+  ParentId: 17816829115585702498
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Background Texture"
+      Enum {
+        Value: "mc:eportalbackground:3"
+      }
+    }
+    Overrides {
+      Name: "bp:Portal Spread"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:Portal Shape"
+      Int: 1
+    }
+    Overrides {
+      Name: "bp:Edge Distance"
+      Float: 0.388283372
+    }
+    Overrides {
+      Name: "bp:Color A"
+      Color {
+        R: 0.0314569026
+        G: 0.950000048
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Color B"
+      Color {
+        R: 0.76
+        G: 0.317086101
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Color C"
+      Color {
+        R: 0.179999948
+        G: 0.0536423735
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Scene Tint Color"
+      Color {
+        R: 0.56
+        G: 1
+        B: 0.729006708
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Scene View Distortion Type"
+      Enum {
+        Value: "mc:eportalscenedistortiontype:newenumerator2"
+      }
+    }
+  }
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 6677237403455816226
+    }
+    TeamSettings {
+    }
+  }
+}
+Objects {
+  Id: 13822238896056597953
+  Name: "Trigger"
+  Transform {
+    Location {
+      X: -1150
+    }
+    Rotation {
+      Yaw: 44.9999924
+    }
+    Scale {
+      X: 1
+      Y: 2.25
+      Z: 4.5
+    }
+  }
+  ParentId: 17816829115585702498
+  ChildIds: 3520725422292626721
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Trigger {
+    Interactable: true
+    InteractionLabel: "Enter Pieceweaver"
+    TeamSettings {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    TriggerShape_v2 {
+      Value: "mc:etriggershape:box"
+    }
+  }
+}
+Objects {
+  Id: 3520725422292626721
+  Name: "pieceWeaveTransport"
+  Transform {
+    Location {
+      X: 20718.2285
+      Y: -2482.72925
+      Z: -188.888885
+    }
+    Rotation {
+      Yaw: -44.9999924
+    }
+    Scale {
+      X: 1
+      Y: 0.444444448
+      Z: 0.222222224
+    }
+  }
+  ParentId: 13822238896056597953
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 10554096445911054023
+    }
+  }
+}
+Objects {
+  Id: 6419235770541297289
+  Name: "Beam Down Teleport VFX"
+  Transform {
+    Location {
+      X: 10750
+      Y: 2200
+      Z: -2500
+    }
+    Rotation {
+      Yaw: 89.999939
+      Roll: 90.0000076
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 17816829115585702498
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:color"
+      Color {
+        R: 0.61
+        G: 0.266622543
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Particle Color"
+      Color {
+        R: 0.120000005
+        G: 0.0166887417
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Spiral Color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Spiral Ground Element Color"
+      Color {
+        R: 0.179999948
+        G: 0.0393377393
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Emissive Boost"
+      Float: 20
+    }
+    Overrides {
+      Name: "bp:Teleport Duration"
+      Float: 1
+    }
+  }
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 16010759996595736800
+    }
+    TeamSettings {
+    }
+    Vfx {
+    }
+  }
+}
+Objects {
+  Id: 3752420043581358914
+  Name: "TransportSound"
+  Transform {
+    Location {
+      X: -1150
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 17816829115585702498
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  AudioInstance {
+    AudioAsset {
+      Id: 7765023027745624892
+    }
+    Volume: 0.500149488
+    Radius: 450
+    EnableOcclusion: true
+    FadeOutTime: 2
+    IsSpatializationEnabled: true
+    IsAttenuationEnabled: true
+  }
+}
+Objects {
+  Id: 10318938888443075517
+  Name: "Arch Fancy Peaked 6m"
+  Transform {
+    Location {
+      X: -1007.99805
+      Y: -121.385742
+      Z: -200
+    }
+    Rotation {
+      Yaw: 45.000103
+    }
+    Scale {
+      X: 1
+      Y: 0.65
+      Z: 1
+    }
+  }
+  ParentId: 17816829115585702498
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 4600228395860812631
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.397351146
+        G: 0.350000024
+        B: 1
+        A: 1
+      }
+    }
+  }
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 7142781972612396783
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
   }
 }
 Objects {

@@ -13,4 +13,4 @@ ScreenshotPaths: "C:/Users/Richard/Documents/My Games/CORE/Saved/Maps/Ensemble 1
 ScreenshotPaths: "C:/Users/Richard/Documents/My Games/CORE/Saved/Maps/Ensemble 1 - Explorer Artists/Screenshots/Screenshot0002.png"
 ScreenshotPaths: "C:/Users/Richard/Documents/My Games/CORE/Saved/Maps/Ensemble 1 - Explorer Artists/Screenshots/Screenshot0003.png"
 ScreenshotPaths: "C:/Users/Richard/Documents/My Games/CORE/Saved/Maps/Ensemble 1 - Explorer Artists/Screenshots/Screenshot0004.png"
-ReleaseNotes: "Initial Release"
+ReleaseNotes: "Initial 1.1.0 : Finalized SFX for Transport between Sister Projects"
