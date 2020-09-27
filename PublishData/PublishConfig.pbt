@@ -1,0 +1,16 @@
+﻿GameId: "7b82e01dee27442aaae35e4037a77514"
+ClientVersion: "1.0.156-prod-s"
+Name: "Ensemble 1 - Explorer Artists"
+Description: "An Ensemble project from Arizona State University\'s Intro to Game Studies class (Fall 2020), Group 1. Collect all of the statue pieces."
+MaxPlayers: 16
+IsPrivate: true
+Tags: "Puzzle"
+Tags: "OpenWorld"
+Tags: "Historical"
+Tags: "Multiplayer"
+Tags: "Cooperative"
+ScreenshotPaths: "C:/Users/Richard/Documents/My Games/CORE/Saved/Maps/Ensemble 1 - Explorer Artists/Screenshots/Screenshot0001.png"
+ScreenshotPaths: "C:/Users/Richard/Documents/My Games/CORE/Saved/Maps/Ensemble 1 - Explorer Artists/Screenshots/Screenshot0002.png"
+ScreenshotPaths: "C:/Users/Richard/Documents/My Games/CORE/Saved/Maps/Ensemble 1 - Explorer Artists/Screenshots/Screenshot0003.png"
+ScreenshotPaths: "C:/Users/Richard/Documents/My Games/CORE/Saved/Maps/Ensemble 1 - Explorer Artists/Screenshots/Screenshot0004.png"
+ReleaseNotes: "Initial Release"
